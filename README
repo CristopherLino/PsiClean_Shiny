@@ -1,0 +1,11 @@
+# PsiClean_Shiny
+
+Aplicativo Shiny para la limpieza de bases de datos provenientes de formularios de Google.
+
+## Funcionalidades
+
+- Carga de archivos Excel
+- Filtrado de casos por edad y consentimiento
+- Renombrado de columnas e ítems
+- Recodificación de respuestas tipo Likert
+- Exportación de base limpia
