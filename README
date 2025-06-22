@@ -1,11 +1,27 @@
-# PsiClean_Shiny
+# PsiClean_Shiny: Aplicación Shiny para la Limpieza de Bases de Datos de Formularios de Google
 
-Aplicativo Shiny para la limpieza de bases de datos provenientes de formularios de Google.
+¡Bienvenido a **PsiClean_Shiny**! Esta es una aplicación interactiva desarrollada en R con Shiny que permite realizar limpieza de datos provenientes de formularios de Google. Está dirigida a estudiantes, tesistas e investigadores que buscan agilizar el preprocesamiento de datos para sus análisis estadísticos.
 
-## Funcionalidades
+## 🧰 Funcionalidades
 
-- Carga de archivos Excel
-- Filtrado de casos por edad y consentimiento
-- Renombrado de columnas e ítems
-- Recodificación de respuestas tipo Likert
-- Exportación de base limpia
+- 📥 Carga de archivos Excel
+- 🔍 Filtrado automático por edad mínima y consentimiento informado
+- ✏️ Renombrado de columnas e ítems
+- 🔁 Recodificación de respuestas tipo Likert
+- 📤 Exportación de base de datos limpia
+
+## 📦 Requisitos
+
+Asegúrate de tener instalados los siguientes paquetes de R:
+
+```r
+packages <- c(
+  "shiny", "shinyWidgets", "shinythemes", "shinydashboard", 
+  "DT", "readxl", "openxlsx", "dplyr", "stringr", "ggstatsplot", 
+  "ThesiStats", "writexl"
+)
+
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+}
+
